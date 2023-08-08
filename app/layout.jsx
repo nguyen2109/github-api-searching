@@ -1,6 +1,5 @@
 import "./../styles/global.css";
 import Providers from "./Providers";
-
 export const metadata = {
   title: "Github API User",
   description: "Github API User",
