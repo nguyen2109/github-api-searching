@@ -145,8 +145,13 @@ export default function Home() {
               Search
             </button>
             {/* */}
-          </div>{" "}
+          </div>
         </form>
+        {error && (
+          <div class="font-bold text-red-500 text-center mx-auto mt-6 max-w-xl space-x-2 rounded-xl bg-transfer p-4  ">
+            {error}
+          </div>
+        )}
         {/* Hiển thị skeleton hoặc kết quả */}
         {isLoading ? ( // Hiển thị skeleton trong quá trình tải
           <div class="mx-auto mt-6 max-w-xl space-x-2 rounded-xl bg-white p-4 shadow-lg dark:bg-slate-700">
