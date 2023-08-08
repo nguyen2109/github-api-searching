@@ -5,7 +5,6 @@ import { format } from "date-fns";
 import { useTheme } from "next-themes";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-
 export default function Home() {
   const [username, setUsername] = useState("");
   const [result, setResult] = useState(null);
