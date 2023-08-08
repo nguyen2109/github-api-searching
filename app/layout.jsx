@@ -1,10 +1,10 @@
 "use client";
 import "./../styles/global.css";
 import Providers from "./Providers";
-export const metadata = {
-  title: "Github API User",
-  description: "Github API User",
-};
+// export const metadata = {
+//   title: "Github API User",
+//   description: "Github API User",
+// };
 const RootLayout = ({ children }) => {
   return (
     <html lang="en" className="white">
