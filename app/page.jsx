@@ -30,7 +30,7 @@ export default function Home() {
 
     const cleanedUsername = username.replace(/\s+/g, "");
     if (!cleanedUsername) {
-      setError("No result");
+      setError("No result!!! Searching other name");
       setResult(null); // Reset result and error when submitting empty username
     }
     try {
@@ -41,7 +41,7 @@ export default function Home() {
       setResult(userData); // Lưu toàn bộ JSON vào state
       setError(null); // Reset error when successful response
     } catch (error) {
-      setError("No result");
+      setError("No result!!! Searching other name");
       setResult(null); // Reset result when response is 404
       try {
         const responseFallback = await axios.get(
@@ -141,9 +141,9 @@ export default function Home() {
         </form>
 
         {error && (
-          <h1 class="justify-center items-center text-red-500 text-2xl ">
+          <div class="font-bold text-red-500 text-center mx-auto mt-6 max-w-xl space-x-2 rounded-xl bg-transfer p-4  ">
             {error}
-          </h1>
+          </div>
         )}
 
         <div class="mx-auto mt-6 max-w-xl space-x-2 rounded-xl bg-white p-4 shadow-lg dark:bg-slate-700">
