@@ -1,10 +1,7 @@
 "use client";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-export const metadata = {
-  title: "Github API User",
-  description: "Github API User",
-};
+
 export default function Page() {
   return (
     <>
