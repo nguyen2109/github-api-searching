@@ -10,8 +10,18 @@ export default function Home() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null); // Thêm state error
   const [isLoading, setIsLoading] = useState(false); //  loading state
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
 
   useEffect(() => {
+    setTheme("light");
     // Thực hiện lệnh request khi component được tạo ra (mount)
     async function fetchData() {
       try {
@@ -66,15 +76,6 @@ export default function Home() {
   };
   const formatCreatedAt = (createdAt) => {
     return format(new Date(createdAt), "dd MMM yyyy");
-  };
-
-  const { theme, setTheme } = useTheme();
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
   };
 
   return (
