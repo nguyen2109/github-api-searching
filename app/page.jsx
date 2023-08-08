@@ -346,11 +346,6 @@ export default function Home() {
             {error}
           </div>
         )}
-        {error && (
-          <div class="font-bold text-red-500 text-center mx-auto mt-6 max-w-xl space-x-2 rounded-xl bg-transfer p-4">
-            {error}
-          </div>
-        )}
       </div>
     </>
   );
