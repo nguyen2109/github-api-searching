@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <>
-      <div class="container mx-auto px-8">
+      <div class="container mx-auto">
         <div class="mx-auto flex w-full p-2">
           <div class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
             <h1 class="text-2xl font-bold ">Github API User</h1>
