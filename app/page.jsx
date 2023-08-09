@@ -205,7 +205,7 @@ export default function Home() {
                     </span>
                   )}
                 </div>
-                <div class="col-start-2 justify-self-center p-3 text-center sm:text-left sm:col-start-1">
+                <div class="col-start-2 justify-self-center p-3 text-center sm:text-left sm:col-start-1 ">
                   {result && result.bio}
                 </div>
                 <div class="mx-auto rounded-lg bg-slate-50 p-3 shadow-lg dark:bg-slate-600">
