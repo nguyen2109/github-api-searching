@@ -26,7 +26,7 @@ export default function Home() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          `https://api.github.com/users/nguyen2109`
+          `https://api.github.com/users/zxczxcdev`
         );
         const userData = response.data;
         setResult(userData);
@@ -60,7 +60,7 @@ export default function Home() {
       setResult(null);
       try {
         const responseFallback = await axios.get(
-          "https://api.github.com/users/nguyen2109"
+          "https://api.github.com/users/zxczxcdev"
         );
         const userDataFallback = responseFallback.data;
         setResult(userDataFallback);
